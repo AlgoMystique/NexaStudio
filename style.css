@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Responsive container */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Navigation */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 0%, rgba(197, 239, 255, 0.2) 90%);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Adds a soft border for contrast */
+    padding: 0 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar-brand img {
+    height: 70px;
+    padding-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    font-weight: 600;
+    float: right; 
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-toggler-icon {
+    font-size: 30px !important;
+}
+
+/* Banner section */
+#banner {
+    position: relative;
+    background-image: url('images/home2.jpg'); /* Set hero image */
+    background-size: cover; /* Ensures it covers the full area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    height: 80vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2a1919;
+    padding: 50px 15px;
+}
+
+.promo-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff; /* Adjust text color for contrast */
+}
+
+#banner p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Overlay for better readability */
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+/* Content inside the banner */
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Bottom Wave */
+.bottom-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    margin-bottom: -1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #banner {
+        height: 60vh; /* Reduce height for smaller screens */
+    }
+
+    .promo-title {
+        font-size: 36px;
+    }
+
+    #banner p {
+        font-size: 18px;
+    }
+}
+
+
+/* Services section */
+#services {
+    padding: 80px 0;
+    position: relative;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    #services {
+        padding: 40px 0;
+    }
+}
+
+.services-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.services {
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.services:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.services h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.title::before {
+    content: '';
+    background: #0c94b9;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.title::after {
+    content: '';
+    background: #1e1010;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(10px);
+}
+
+@media (max-width: 768px) {
+    .title::before {
+        width: 150px;
+    }
+}
+
+#services .btn-primary {
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #2BD2FF, #191111);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+#services .btn-primary:hover {
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
+}
+
+/* About us Section */
+#about-us {
+    background: #ffffff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#about-us img {
+    display: block;  /* Prevents inline spacing issues */
+    width: 100%;
+    max-width: 500px;
+    margin: 80px auto 0; /* Centers the image horizontally */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
+@media (max-width: 768px) {
+    #about-us img {
+        margin-top: 30px;
+    }
+}
+
+.about-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 8%;
+    text-align: center;
+}
+
+#about-us ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#about-us ul {
+    margin-left: 20px;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+/* Testimonials section */
+#testimonials {
+    margin: 100px 0;
+}
+
+@media (max-width: 768px) {
+    #testimonials {
+        margin: 50px 0;
+    }
+}
+
+.testimonials {
+    border-left: 4px solid #0c94b9;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.testimonials:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.testimonials img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    object-fit: cover;
+}
+
+.user-details {
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* Social media section */
+#social-media {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+    #social-media {
+        padding: 50px 0;
+    }
+}
+
+#social-media p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    #social-media p {
+        font-size: 28px;
+    }
+}
+
+.social-icons img {
+    width: 60px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.social-icons a:hover img {
+   transform: translateY(-10px);
+}
+
+/* Footer section */
+/* Footer Section */
+#footer {
+    position: relative;
+    background-image: url('images/home2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Ensures text is readable */
+    padding: 50px 15px;
+    overflow: hidden;
+}
+
+/* Blurred Background Overlay */
+#footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('images/home2.jpg'); /* Same image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.6; /* Adjusted for better readability */
+    z-index: 0;
+}
+
+/* Dark Overlay for Contrast */
+#footer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Darkened overlay for better text visibility */
+    z-index: 1;
+}
+
+/* Ensure Footer Content Appears Above Background */
+#footer * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Wave Image for Footer */
+#footer .footer-img {
+    position: absolute;
+    top: -2px; /* Aligns perfectly with section above */
+    left: 0;
+    width: 100%;
+    transform: rotate(180deg);
+    z-index: 3; /* Ensures it's above the background */
+}
+
+/* Footer Content Wrapper */
+#footer .container {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer Box */
+.footer-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Footer Logo */
+.footer-box img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+/* Footer Text */
+.footer-box p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.footer-box .fa {
+    margin-right: 10px;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #2BD2FF, #1d0f0f);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.footer-box .fa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+.footer-box .form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Subscribe Button */
+.footer-box .btn-primary {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    background: linear-gradient(to right, #2BD2FF, #1d0f0f);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.footer-box .btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Separator */
+#footer hr {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    height: 1px;
+}
+
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #footer {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .text-md-center {
+        text-align: center !important;
+    }
+    
+    .mb-md-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .footer-box {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .d-sm-none {
+        display: none !important;
+    }
+}

@@ -4,7 +4,7 @@ An interactive website showcasing stunning UI/UX designs built with HTML, CSS, a
 
 ## 🚀 Live Demo
 
-[View Live Demo]
+[View Live Demo](https://algomystique.github.io/NexaStudio/)
 
 ## 🖼 Screenshots
 

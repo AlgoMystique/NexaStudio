@@ -11,7 +11,6 @@ An interactive website showcasing stunning UI/UX designs built with HTML, CSS, a
 ![Screenshot of the Website](screenshots/1.png)
 ![Screenshot of the Website](screenshots/2.png)
 ![Screenshot of the Website](screenshots/3.png)
-![Screenshot of the Website](screenshots/4.png)
 ![Screenshot of the Website](screenshots/5.png)
 ![Screenshot of the Website](screenshots/6.png)
 

@@ -89,17 +89,18 @@ body {
 /* Banner section */
 #banner {
     position: relative;
-    background-image: url('images/home2.jpg'); /* Set hero image */
-    background-size: cover; /* Ensures it covers the full area */
-    background-position: center; /* Centers the image */
+    background-image: url('images/home2.png'); /*  hero image */
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
-    height: 80vh; /* Adjust height as needed */
+    height: 80vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #2a1919;
     padding: 50px 15px;
+
 }
 
 .promo-title {
@@ -125,6 +126,8 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    backdrop-filter: blur(8px); 
+  
 }
 
 /* Content inside the banner */
@@ -349,11 +352,11 @@ body {
    transform: translateY(-10px);
 }
 
-/* Footer section */
+
 /* Footer Section */
 #footer {
     position: relative;
-    background-image: url('images/home2.jpg'); 
+    background-image: url('images/home2.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -373,11 +376,11 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('images/home2.jpg'); /* Same image */
+    background-image: url('images/home2.png');
     background-size: cover;
     background-position: center;
     filter: blur(10px);
-    opacity: 0.6; /* Adjusted for better readability */
+    opacity: 0.6; 
     z-index: 0;
 }
 
@@ -386,7 +389,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* Darkened overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -399,11 +402,11 @@ body {
 /* Wave Image for Footer */
 #footer .footer-img {
     position: absolute;
-    top: -2px; /* Aligns perfectly with section above */
+    top: -2px; 
     left: 0;
     width: 100%;
     transform: rotate(180deg);
-    z-index: 3; /* Ensures it's above the background */
+    z-index: 3; 
 }
 
 /* Footer Content Wrapper */
